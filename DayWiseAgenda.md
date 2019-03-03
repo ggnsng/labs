@@ -47,6 +47,8 @@
 -   DirectConnect
 -   Autoscaling and Load balancing
 
+## Day 04:
+
 **Storage**
 
 -   EBS  
