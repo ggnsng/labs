@@ -67,6 +67,8 @@
 -   Storage Gateway
 -   Snow family
 
+## Day 05:
+
 **Databases**
 
 -   RDS
