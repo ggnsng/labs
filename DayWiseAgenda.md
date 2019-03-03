@@ -27,6 +27,7 @@
 
 ## Day 03:
 
+-   VPC Continued..
     -   NAT Gateway, NAT Instance; Comparison
     -   NACL (Stateful)
     -   Security Groups (Stateless)
