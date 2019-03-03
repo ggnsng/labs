@@ -21,22 +21,24 @@
 **Network**
 
 -   VPC
--   IGW
--   Subnets
--   RouteTables
+    -   IGW
+    -   Subnets
+    -   RouteTables
 
 ## Day 03:
 
--   NAT Gateway, NAT Instance; Comparison
--   NACL (Stateful)
--   Security Groups (Stateless)
--   NACL vs SG
+    -   NAT Gateway, NAT Instance; Comparison
+    -   NACL (Stateful)
+    -   Security Groups (Stateless)
+    -   NACL vs SG
 
 **Compute**
 
--   EC2 creation Modification, Deletion
--   Userdata, vs Metadata (Comparison)
--   Revisit Security Groups
+-   EC2
+    -   Creation Modification, Deletion
+    -   Userdata, vs Metadata (Comparison)
+    -   Revisit Security Groups
+    -   EC2 purchasing Options, Tenancy
 -   Revisit Role
 -   Elastic IP
 -   VPC Peering
@@ -47,15 +49,15 @@
 **Storage**
 
 -   EBS  
--   Types  
--   Creation, Modification, Snapshots, Deletion, Movement
+    -   Types  
+    -   Creation, Modification, Snapshots, Deletion, Movement
 -   S3
--   Versioning
--   Static Website Hosting
--   ACL and Bucket Policy
--   S3 Standard, IA, IA-OneZone
--   CRR, Transfer Acceleration
--   Life Cycle Policy
+    -   Versioning
+    -   Static Website Hosting
+    -   ACL and Bucket Policy
+    -   S3 Standard, IA, IA-OneZone
+    -   CRR, Transfer Acceleration
+    -   Life Cycle Policy
 -   Glacier
 -   CloudFront
 -   EFS
@@ -65,20 +67,18 @@
 **Databases**
 
 -   RDS
--   Supported engines
--   Creation, modification and deletion
+    -   Supported engines
+    -   Creation, modification and deletion
 -   ElastiCache
 -   DynamoDB
 -   RedShift
 -   Kinesis
 -   
--   EC2 purchasing Options, Tenancy
 -   Route 53
 -   CloudWatch
 -   CloudTrail
 -   Trusted Advisor
 -   HSM
--   Application Integration/Decoupling
 -   
 -   Application Integration/Decoupling
 -   SQS
@@ -86,13 +86,17 @@
 -   SWF
 -   SES
 -   Lambda
--   
+
+**Automation DevOps**
+
 -   Elastic Beanstalk
 -   CloudFormation
 -   OpsWorks
+
+**Miscellaneous**
+
 -   Simple Monthly Calculator, TCO Calculator
 -   Guidance on Assessments
--   
 -   Limits
 -   Global vs Regional vs AZ resources
 -   Explain the project, required component
