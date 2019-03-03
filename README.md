@@ -1,6 +1,6 @@
 Imp Links
 
-AWS CLI download - https://aws.amazon.com/cli/  
+[AWS CLI download](https://aws.amazon.com/cli/)
 Configuring cli - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html  
 Practitioner Course - https://www.aws.training/learningobject/curriculum?id=27076  
 AWS Policy Generator - https://awspolicygen.s3.amazonaws.com/policygen.html  
