@@ -127,7 +127,7 @@ These rules are not perfect but will suffice our requirement as of now. We will 
 
 For now, our VPC configuration is complete. The instances launched in our public subnets should have access to Internet and the instances in our private subnet should not. We would verify the same in the next section.
 
-## VPC Lab -- Part 02 of 02
+## VPC Lab - Part 02 of 02
 
 #### Activity 05 - Creating EC2 instances
 
