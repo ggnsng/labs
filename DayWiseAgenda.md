@@ -58,7 +58,7 @@
     -   Versioning
     -   Static Website Hosting
     -   ACL and Bucket Policy
-    -   S3 Standard, IA, IA-OneZone
+    -   S3 tiers 
     -   CRR, Transfer Acceleration
     -   Life Cycle Policy
 -   Glacier
