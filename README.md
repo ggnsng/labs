@@ -1,9 +1,6 @@
-# labs
-CLI Documentation
-https://awsdocs.s3.amazonaws.com/cli/latest/aws-cli.pdf
-Policy Generator
-https://awspolicygen.s3.amazonaws.com/policygen.html
-Practitioner Course
-https://www.aws.training/learningobject/curriculum?id=27076
-Lab01
-https://github.com/ggnsng/labs/blob/master/lab01.md
+Imp Links
+
+Practitioner Course - https://www.aws.training/learningobject/curriculum?id=27076  
+AWS Policy Generator - https://awspolicygen.s3.amazonaws.com/policygen.html  
+CLI Documentation - https://awsdocs.s3.amazonaws.com/cli/latest/aws-cli.pdf  
+TCP/IP, Subnetting brushup - https://www.youtube.com/watch?v=EkNq4TrHP_U  
