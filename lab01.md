@@ -137,10 +137,10 @@ Click on 'Edit Rules' and add rules for incoming traffic on the security groups 
 
 #### My-DB-SG
 
-|     Type     | Protocol | Port Range |  Source  |             |
-| :----------: | :------: | :--------: | :------: | :---------: |
-| MYSQL/Aurora |    TCP   |    3306    |  Custom  | <My-App-SG> |
-|      RDP     |    TCP   |    3389    | Anywhere |  0.0.0.0/0  |
+|     Type     | Protocol | Port Range |  Source  |           |
+| :----------: | :------: | :--------: | :------: | :-------: |
+| MYSQL/Aurora |    TCP   |    3306    |  Custom  | My-App-SG |
+|      RDP     |    TCP   |    3389    | Anywhere | 0.0.0.0/0 |
 
 #### My-ALB-SG
 
@@ -159,18 +159,18 @@ These rules are not perfect but will suffice our requirement as of now. We will 
 
 #### My-App-SG
 
-|  Type | Protocol | Port Range | Source |                       |
-| :---: | :------: | :--------: | :----: | :-------------------: |
-|  HTTP |    TCP   |     80     | Custom |     \\<My-ALB-SG>     |
-| HTTPS |    TCP   |     443    | Custom |     \\<My-ALB-SG>     |
-|  RDP  |    TCP   |    3389    | Custom | \\<My-BastionHost-SG> |
+|  Type | Protocol | Port Range | Source |                   |
+| :---: | :------: | :--------: | :----: | :---------------: |
+|  HTTP |    TCP   |     80     | Custom |     My-ALB-SG     |
+| HTTPS |    TCP   |     443    | Custom |     My-ALB-SG     |
+|  RDP  |    TCP   |    3389    | Custom | My-BastionHost-SG |
 
 #### My-DB-SG
 
-|     Type     | Protocol | Port Range | Source |                       |
-| :----------: | :------: | :--------: | :----: | :-------------------: |
-| MYSQL/Aurora |    TCP   |    3306    | Custom |     \\<My-App-SG>     |
-|      RDP     |    TCP   |    3389    | Custom | \\<My-BastionHost-SG> |
+|     Type     | Protocol | Port Range | Source |                   |
+| :----------: | :------: | :--------: | :----: | :---------------: |
+| MYSQL/Aurora |    TCP   |    3306    | Custom |     My-App-SG     |
+|      RDP     |    TCP   |    3389    | Custom | My-BastionHost-SG |
 
 #### My-ALB-SG
 
