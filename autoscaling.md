@@ -1,4 +1,4 @@
-### just user data, literature in progress ;)
+### just user data, use with Amazon Linux 2. Rest literature is in progress ;)
 
 `#!/bin/bash
 yum install httpd mysql git -y
