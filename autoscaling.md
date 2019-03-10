@@ -11,4 +11,5 @@ chkconfig httpd on`
 yum install httpd mysql git -y`
 
 `#!/bin/bash`
+
 `yum install httpd mysql git -y`
