@@ -7,5 +7,8 @@ mv /var/www/html/bikerhood/*  /var/www/html/
 service httpd start
 chkconfig httpd on`
 
-`#!/bin/bash
+`#!/bin/bash  
 yum install httpd mysql git -y`
+
+`#!/bin/bash`
+`yum install httpd mysql git -y`
