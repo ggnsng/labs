@@ -1,4 +1,5 @@
--   whether it is possible to change the IAM user to Root user
+&lt;-   whether it is possible to change the IAM user to Root user
+
 -   even after installing cli in windows I am unable to see it in cmd with aws --version command
 -   The specified value for accountAlias is invalid. It must contain only digits, lowercase letters, and hyphens (-), but cannot begin or end with a hyphen
 -   I can see 2 policies - Read only Access and View Only Access.... any difference between these 2 policies
@@ -12,4 +13,4 @@
 -   I need help with cli on Mac. I downloaded everything, still not able to run commands. Also, I am using my personal mac, how do I login as Admin?
 -   i am not seeing the Rotate your access keys option in my console
 -   Is Public IP changes dynamically every time I restart my system ?
--   As for as I know Natting translates each private IP with single public IP  but you mentioned here like for all private Ip's to one NatIp.
+-   As for as I know Natting translates each private IP with single public IP  but you mentioned here like for all private Ip's to one NatIp.>
