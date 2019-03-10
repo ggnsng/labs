@@ -1,3 +1,5 @@
+### just user data, literature in progress ;)
+
 `#!/bin/bash
 yum install httpd mysql git -y
 amazon-linux-extras install -y php7.2
