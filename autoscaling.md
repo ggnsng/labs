@@ -6,3 +6,6 @@ git clone https://github.com/ashydv/bikerhood.git
 mv /var/www/html/bikerhood/*  /var/www/html/
 service httpd start
 chkconfig httpd on`
+
+`#!/bin/bash
+yum install httpd mysql git -y`
