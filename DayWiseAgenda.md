@@ -69,7 +69,6 @@
 -   EFS
 -   Storage Gateway
 -   Snow family
--   
 
 **Databases**
 
