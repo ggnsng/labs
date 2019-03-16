@@ -77,14 +77,15 @@
 -   ElastiCache
 -   DynamoDB
 -   RedShift
+
+## Day 06:
+
 -   Kinesis
--   
 -   Route 53
 -   CloudWatch
 -   CloudTrail
 -   Trusted Advisor
 -   HSM
--   
 -   Application Integration/Decoupling
 -   SQS
 -   SNS
