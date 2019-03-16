@@ -62,12 +62,14 @@
     -   CRR, Transfer Acceleration
     -   Life Cycle Policy
 -   Glacier
+
+## Day 05:
+
 -   CloudFront
 -   EFS
 -   Storage Gateway
 -   Snow family
-
-## Day 05:
+-   
 
 **Databases**
 
