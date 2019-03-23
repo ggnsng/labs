@@ -87,7 +87,11 @@
 -   CloudTrail
 -   Trusted Advisor
 -   HSM
--   Application Integration/Decoupling
+
+## Day 07:
+
+**Application Integration/Decoupling**
+
 -   SQS
 -   SNS
 -   SWF
