@@ -69,7 +69,7 @@ Scroll to the Function Code section.
 -   Code entry type: Upload a file from Amazon S3.
 -   Runtime: Python 3.6
 -   Handler: CreateThumbnail.handler
--   S3 link URL: `https://s3-us-west-2.amazonaws.com/us-west-2-awstraining/awsu-spl/spl-88/scripts/CreateThumbnail.zip`
+-   S3 link URL: `https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-88/scripts/CreateThumbnail.zip`
 
 Click on Save on the top of the screen with rest all fields left as default. You should go through the other fields for educating yourselves later.
 
