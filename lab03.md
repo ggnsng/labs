@@ -22,7 +22,7 @@ The following diagram illustrates the application flow:
 -   Two S3 buckets (one for holding original picture and anther to hold the thumbnails)
 -   Lambda function.
 
-       **Please ensure to use us-west-2 (Oregon) region to do this lab.**
+**Please ensure to use us-west-2 (Oregon) region to do this lab.**
 
 We will complete the scenario in below steps
 
@@ -30,7 +30,7 @@ Step 1 – Creating a Role that will allow your Lambda function to talk to s3 bu
 Step 2 – Creating a bucket to host the original pictures and another to hold the thumbnails.
 Step 3 – Create Lambda function.
 Step 4 – Verifying the function.
-Step 5 – Clean up post lab completion.
+Step 5 – Clean up post lab completion. 
 
 Let us get started.
 
@@ -68,7 +68,7 @@ Scroll to the Function Code section.
 
 -   Code entry type: Upload a file from Amazon S3.
 -   Runtime: Python 3.6
--   Handler: CreateThumbnail.handler
+-   Handler: `CreateThumbnail.handler`
 -   S3 link URL: `https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-88/scripts/CreateThumbnail.zip`
 
 Click on Save on the top of the screen with rest all fields left as default. You should go through the other fields for educating yourselves later.
