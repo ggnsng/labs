@@ -26,11 +26,11 @@ The following diagram illustrates the application flow:
 
 We will complete the scenario in below steps
 
-**Step 1:** Creating a Role that will allow your Lambda function to talk to s3 buckets.
-**Step 2**: – Creating a bucket to host the original pictures and another to hold the thumbnails.
-**Step 3**: – Create Lambda function.
-**Step 4**: – Verifying the function.
-**Step 5**: – Clean up post lab completion. 
+**Step 1:** Creating a Role that will allow your Lambda function to talk to s3 buckets.  
+**Step 2**: – Creating a bucket to host the original pictures and another to hold the thumbnails.  
+**Step 3**: – Create Lambda function.  
+**Step 4**: – Verifying the function.  
+**Step 5**: – Clean up post lab completion.   
 
 Let us get started.
 
