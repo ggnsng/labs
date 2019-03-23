@@ -22,7 +22,7 @@ The following diagram illustrates the application flow:
 -   Two S3 buckets (one for holding original picture and anther to hold the thumbnails)
 -   Lambda function.
 
-     **Please ensure to use us-west-2 (Oregon) region to do this lab.**
+       **Please ensure to use us-west-2 (Oregon) region to do this lab.**
 
 We will complete the scenario in below steps
 
