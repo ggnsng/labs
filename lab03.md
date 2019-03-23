@@ -40,10 +40,9 @@ Creating Lab:
 
 Go to IAM and create a role as below.
 
--   • Select type of trusted entity – Lambda
--   • Attach permissions policies - AmazonS3FullAccess
--   • Role name – lambda-execution-role (or any name you want)
--   
+-   Select type of trusted entity – Lambda
+-   Attach permissions policies - AmazonS3FullAccess
+-   Role name – lambda-execution-role (or any name you want)
 
 **Step 2** – Creating a bucket to host the original pictures and another to hold the thumbnails
 
@@ -58,19 +57,19 @@ Create another bucket with name “_bucketname_-resized”.
 
 Click on Lambda > Create a function > Author from scratch
 
--   Name – “my-lambda-function” (or any name)
--   Runtime – Python 3.6
--   Role – Choose an existing role, (choose the one you created in the Step 01)
+-   Name: “my-lambda-function” (or any name)
+-   Runtime: Python 3.6
+-   Role: Choose an existing role, (choose the one you created in the Step 01)
 
 Click on create function, you should see a congratulations message on the next screen.
 
 We have just created a name/placeholder for our function and selected desired platform, now let us supply the code.
 Scroll to the Function Code section.
 
--   Code entry type – Upload a file from Amazon S3.
--   Runtime – Python 3.6
--   Handler – CreateThumbnail.handler
--   S3 link URL – `https://s3-us-west-2.amazonaws.com/us-west-2-awstraining/awsu-spl/spl-88/scripts/CreateThumbnail.zip`
+-   Code entry type: Upload a file from Amazon S3.
+-   Runtime: Python 3.6
+-   Handler: CreateThumbnail.handler
+-   S3 link URL: `https://s3-us-west-2.amazonaws.com/us-west-2-awstraining/awsu-spl/spl-88/scripts/CreateThumbnail.zip`
 
 Click on Save on the top of the screen with rest all fields left as default. You should go through the other fields for educating yourselves later.
 
