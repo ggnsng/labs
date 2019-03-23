@@ -18,11 +18,11 @@ The following diagram illustrates the application flow:
 **AWS Resources Required**: - You will have to create the following Amazon S3, Lambda, and IAM
     resources in your account to accomplish this lab.
 
-1.  IAM role
-2.  Two S3 buckets (one for holding original picture and anther to hold the thumbnails)
-3.  Lambda function.
+-   IAM role
+-   Two S3 buckets (one for holding original picture and anther to hold the thumbnails)
+-   Lambda function.
 
-    **Please ensure to use us-west-2 (Oregon) region to do this lab.**
+     **Please ensure to use us-west-2 (Oregon) region to do this lab.**
 
 We will complete the scenario in below steps
 
