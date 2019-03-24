@@ -98,6 +98,8 @@
 -   SES
 -   Lambda
 
+## Day 08:
+
 **Automation DevOps**
 
 -   Elastic Beanstalk
