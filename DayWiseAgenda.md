@@ -113,3 +113,5 @@
 -   Limits
 -   Global vs Regional vs AZ resources
 -   Explain the project, required component
+-   reInvent, breakout sessions, aws.training, whitepapers, customer use cases, this is my architecture
+-   aws blog, AWS Online Tech Talks
