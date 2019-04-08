@@ -37,7 +37,7 @@
 
 -   EC2
     -   Creation Modification, Deletion
-    -   Userdata, vs Metadata (Comparison)
+    -   Userdata, Metadata (Comparison)
     -   Revisit Security Groups
     -   EC2 purchasing Options, Tenancy
 -   Revisit Role
