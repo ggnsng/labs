@@ -3,7 +3,7 @@
 ### Day01:
 
 -   Basics of Cloud Computing
--   Intro to AWS
+-   Introduction and History of AWS
 -   Global Infrastructure
 -   Free tier account creation and coverage
 -   Exploring the AWS Management Console
