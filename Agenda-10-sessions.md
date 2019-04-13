@@ -2,7 +2,7 @@
 
 ### Day01:
 
--   Cloud Basics
+-   Basics of Cloud Computing
 -   Intro to AWS
 -   Global Infrastructure
 -   Free tier account creation and coverage
