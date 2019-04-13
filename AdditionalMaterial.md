@@ -1,6 +1,7 @@
 ## Imp Links
 
--   [Practitioner Course](https://www.aws.training/learningobject/curriculum?id=27076)
+-   [The NIST definition of cloud computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
+-   [Practitioner Course](https://www.aws.training/learningobject/curriculum?-id=27076)
 -   [AWS CLI download](https://aws.amazon.com/cli/)
 -   [Configuring cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 -   [CLI Documentation (Detailed)](https://awsdocs.s3.amazonaws.com/cli/latest/aws-cli.pdf)
