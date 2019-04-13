@@ -4,8 +4,10 @@
 
 -   Cloud Basics
 -   Intro to AWS
+-   Global Infrastructure
 -   Free tier account creation and coverage
--   Certification Roadmap (to be revisited)
+-   Exploring the AWS Management Console
+-   Certification Roadmap
 
 ### Day 02:
 
