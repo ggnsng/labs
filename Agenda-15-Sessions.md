@@ -107,22 +107,32 @@
 -   SNS
 -   SWF
 -   SES
--   Lambda
 
-## Day 0:
+## Day 12:
 
 **Automation DevOps**
 
+-   Lambda
 -   Elastic Beanstalk
+
+## Day 13:
+
 -   CloudFormation
 -   OpsWorks
 
+## Day 14:
+
 **Miscellaneous**
 
+-   Going through all the pointers in exam guide.
+-   Exploring "well-architected framework" and "Architecting for the Cloud" whitepapers
 -   Simple Monthly Calculator, TCO Calculator
 -   Guidance on Assessments
 -   Limits
 -   Global vs Regional vs AZ resources
--   Explain the project, required component
+-   Explaining the Final project, required component
+
+## Day 15:
+
 -   reInvent, breakout sessions, aws.training, whitepapers, customer use cases, this is my architecture
 -   aws blog, AWS Online Tech Talks
