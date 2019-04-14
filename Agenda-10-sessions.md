@@ -18,7 +18,7 @@
 -   Policies (AWS Managed, Customer managed, Inline)
 -   Roles (to be revisited)
 -   MFA
--   KMS
+-   KMS (to be revisited)
 
 **Network**
 
