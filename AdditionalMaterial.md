@@ -10,7 +10,7 @@
 -   [Configuring cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 -   [CLI Documentation (Detailed)](https://awsdocs.s3.amazonaws.com/cli/latest/aws-cli.pdf)
 -   [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html)
-
+-   [Understanding Envelope Encryption and more](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping)
 -   [TCP/IP, Subnetting brush-up](https://www.youtube.com/watch?v=EkNq4TrHP_U)
 
 -   [CloudFormation Templates](https://aws.amazon.com/cloudformation/aws-cloudformation-templates)
