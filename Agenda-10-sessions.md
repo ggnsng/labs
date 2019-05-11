@@ -90,7 +90,7 @@
 -   Trusted Advisor
 -   HSM
 
-## Day 07: (Revisit Role and s3 pricing)
+## Day 07:
 
 **Application Integration/Decoupling**
 

@@ -17,7 +17,7 @@
 -   [CloudFormation Templates](https://aws.amazon.com/cloudformation/aws-cloudformation-templates)
 
 
--   [Architecting for the Cloud: AWS Best Practices Whitepaper, Feb 2016](https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
+-   [Architecting for the Cloud: AWS Best Practices Whitepaper, Feb 2016](https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
 -   [AWS Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)
 
 -   [Revert changes to security groups automatially using Lambda](https://aws.amazon.com/blogs/security/how-to-automatically-revert-and-receive-notifications-about-changes-to-your-amazon-vpc-security-groups/)
