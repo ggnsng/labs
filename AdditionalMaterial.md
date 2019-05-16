@@ -5,7 +5,7 @@
 -   [AWS SAA Certification Exam guide](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate_Feb_2018_%20Exam_Guide_v1.5.2.pdf?refid=em_140172)
 -   [AWS Cloud Practitioner Essentials](https://www.aws.training/learningobject/curriculum?id=27076)
 -   [AWSomeday presentations](https://www.slideshare.net/AmazonWebServices/awsome-day-2019-detroit)
-    this is my new feature
+
 -   [AWS CLI download](https://aws.amazon.com/cli/)
 -   [Configuring cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 -   [CLI Documentation (Detailed)](https://awsdocs.s3.amazonaws.com/cli/latest/aws-cli.pdf)
