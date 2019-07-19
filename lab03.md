@@ -63,7 +63,7 @@ Click on Lambda > Create a function > Author from scratch
 Click on create function, you should see a congratulations message on the next screen.
 
 We have just created a name/placeholder for our function and selected desired platform, now let us supply the code.
-Scroll to the Function Code section.
+Download the code zip from [here](https://github.com/ggnsng/labs/raw/master/CreateThumbnail.zip) and Scroll to the Function Code section.
 
 -   Code entry type: Upload a file from Amazon S3.
 -   Runtime: Python 3.6
