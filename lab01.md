@@ -106,7 +106,7 @@ In the navigation pane find and click on 'Security Groups'
     		_VPC_: MyVPC
 -   Click on Create
 
-Create two more security groups with following configurations --
+Create three more security groups with following configurations --
 
 -   _Security group name_: My-DB-SG   
     		_Description_: This SG is to be used for database servers.   
