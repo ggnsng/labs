@@ -108,14 +108,14 @@ In the navigation pane find and click on 'Security Groups'
 
 Create two more security groups with following configurations --
 
--   Security group name_: My-DB-SG
+-   _Security group name_: My-DB-SG
     		_Description_: This SG is to be used for database servers.
     		_VPC_: MyVPC
 
 -   _Security group name_: My-ALB-SG
     		_Description_: This SG is to be used for application load balancers.
     		_VPC_: MyVPC
--   Security group name_: My-BastionHost-SG
+-   _Security group name_: My-BastionHost-SG
     		_Description_: This SG is to be used for bastions hosts.
     		_VPC_: MyVPC
 
