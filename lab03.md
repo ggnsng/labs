@@ -1,9 +1,11 @@
 # Lab - Using AWS Lambda with Amazon S3
 
-**Introduction**: - In this lab we will create a sample Lambda function that creates thumbnails of
+**Introduction**: In this lab we will create a sample Lambda function that creates thumbnails of
 the pictures (.jpg and .png) uploaded in an s3 bucket and saves them in another s3 bucket.
 
 The following diagram illustrates the application flow:
+
+ ![](https://github.com/ashydv/aws-labs/blob/master/images/lambda.PNG)
 
 1.  A user uploads an object to the source bucket in Amazon S3 (object-created event).
 2.  Amazon S3 detects the object-created event.
