@@ -189,12 +189,12 @@ Let us switch to EC2 Dashboard now and click on Launch Instance.
 
 -   Amazon Machine Image: "Microsoft Windows Server 2016 Base" (free tier eligible)
 -   Instance Type: t2.micro
--   Configure Instance Details: select the below mentioned points and leave everything else as default.
-    		_Network_: MyVPC
+-   Configure Instance Details: select the below mentioned points and leave everything else as default.   
+    		_Network_: MyVPC   
     		_Subnet_: MyPublicSubnet01
 -   Add Storage: Leave defaults (Your instance will come with a root volume of 30 GB as you can see in this screen. We can add additional EBS volumes if need be)
 -   Add Tags
-    		_Key_: Name
+    		_Key_: Name   
     		_Value_: MyAppServer
 -   Configure Security Group: Select existing -> My-App-SG
 -   Click on Review and Launch.
@@ -212,8 +212,8 @@ Go back to EC2 Dashboard now and click on Launch Instance.
 
 -   Amazon Machine Image: "Microsoft Windows Server 2016 Base" (free tier eligible)
 -   Instance Type: t2.micro
--   Configure Instance Details: select the below mentioned points and leave everything else as default.
-    		_Network_: MyVPC
+-   Configure Instance Details: select the below mentioned points and leave everything else as default.   
+    		_Network_: MyVPC   
     		_Subnet_: MyPrivateSubnet01
 -   Add Storage: Leave defaults (Your instance will come with a root volume of 30 GB as you can see in this screen. We can add additional EBS volumes if need be)
 -   Add Tags
