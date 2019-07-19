@@ -5,7 +5,7 @@ the pictures (.jpg and .png) uploaded in an s3 bucket and saves them in another 
 
 The following diagram illustrates the application flow:
 
- ![](https://github.com/ashydv/aws-labs/blob/master/images/lambda.PNG)
+ ![](https://github.com/ggnsng/labs/blob/master/images/lambda.png)
 
 1.  A user uploads an object to the source bucket in Amazon S3 (object-created event).
 2.  Amazon S3 detects the object-created event.
