@@ -100,7 +100,7 @@ _You would see that all four subnets that you created are associated with the ma
 Let us now create three different 'Security Groups' for bastion hosts, application server, database and load balancer. We would leverage them in coming labs.
 In the navigation pane find and click on 'Security Groups'
 
--   Click on 'Create Security Group'
+-   Click on 'Create Security Group'   
     		_Security group name_: My-App-SG   
     		_Description_: This SG is to be used for application servers.   
     		_VPC_: MyVPC
