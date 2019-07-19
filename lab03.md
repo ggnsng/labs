@@ -65,10 +65,9 @@ Click on create function, you should see a congratulations message on the next s
 We have just created a name/placeholder for our function and selected desired platform, now let us supply the code.
 Download the code zip from [here](https://github.com/ggnsng/labs/raw/master/CreateThumbnail.zip) and Scroll to the Function Code section.
 
--   Code entry type: Upload a file from Amazon S3.
+-   Code entry type: Upload a .zip file (upload the Function package you just downloaded)
 -   Runtime: Python 3.6
 -   Handler: `CreateThumbnail.handler`
--   S3 link URL: `https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-88/scripts/CreateThumbnail.zip`
 
 Click on Save on the top of the screen with rest all fields left as default. You should go through the other fields for educating yourselves later.
 
