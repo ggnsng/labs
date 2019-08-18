@@ -158,7 +158,7 @@ Click Save, the application will now connect to the database and will load some 
 
 So as of now you have one single EC2 instance serving a web application, it is storing the data in a RDS database. But this instance is a manually created and what will happen if it goes down? The data might remain saved in the database but will be unavailable till the time the app server is/are brought back. The process has to be an automated one rather than manual, EC2 auto scaling is the feature that comes to rescue here!
 
-Terminate the instance, we are simulating a disaster now 
+Terminate the EC2 instance, we are simulating a disaster now 
 
 ## Lab 02 – Part 02 of 02
 
