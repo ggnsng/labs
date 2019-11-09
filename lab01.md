@@ -15,11 +15,11 @@ Now you need to give a name to your VPC and select a CIDR notation.
 -   IPv4 CIDR block: 10.0.0.0/16
 -   IPv4 CIDR block: No IPv6 CIDR Block
 -   Tenancy: default
--   Click on Yes Create.
+-   Click on Create.
     You should now see your VPC created similar to below picture.
 
-Select MyVPC and click on Action drop-down.
-Ensure that Edit DNS Resolution and Edit DNS Hostnames are set to Yes.
+Select "MyVPC" that you just created and click on Action drop-down.
+Ensure that Edit DNS Resolution and Edit DNS Hostnames both are checked.
 
 #### Activity 02 - Creating Subnets
 
@@ -29,46 +29,62 @@ Click on Subnets in the sidebar of the VPC Dashboard, click on Create Subnet
 -   Name tag: MyPrivateSubnet01
 
     -   VPC: MyVPC
-    -   Availability Zone: _choose the first one you see_
+    -   Availability Zone: _choose the first one you see_ (us-east-2a)
     -   IPv4 CIDR block: 10.0.1.0/24
 
-Click on Yes, Create. Your new subnet should have been created now and show up on the screen.  
+Click on Create and Close. Your new subnet should have been created now and show up on the screen.  
+
 Repeat the same steps to create 3 more Subnets with below configuration.
 
 -   Name tag: MyPrivateSubnet02
     -   VPC: MyVPC
-    -   Availability Zone: _choose the second one you see_
+    -   Availability Zone: _choose the second one you see_ (us-east-2b)
     -   IPv4 CIDR block: 10.0.2.0/24
 -   Name tag: MyPublicSubnet01
     -   VPC: MyVPC
-    -   Availability Zone: _choose the first one you see_
+    -   Availability Zone: _choose the first one you see_ (us-east-2a)
     -   IPv4 CIDR block: 10.0.3.0/24
 -   Name tag: MyPublicSubnet02
 
     -   VPC: MyVPC
-    -   Availability Zone: _choose the second one you see_
+    -   Availability Zone: _choose the second one you see_ (us-east-2b)
     -   IPv4 CIDR block: 10.0.4.0/24
+    
+Note: You just created 4 subnets on 2 diffrent Availability zones!
 
-Once all the subnets are created, select MyPublicSubnet01 and click on the Subnet Actions dropdown; go to Modify auto-assign IP settings and check Enable auto-assign public IPv4 address box.  
-Click on Save. Repeat the same step for MyPublicsubnet02 as well. Your four new subnets should be visible to you in subnet section similar to the below picture.
+Once all the subnets are created, select MyPublicSubnet01 and click on the Subnet Actions dropdown; Select Modify auto-assign IP settings and Check Enable auto-assign public IPv4 address box and Save.
+
+Repeat the same step for MyPublicsubnet02 as well.
+
+Your four new subnets should be visible to you in subnet section similar to the below picture.
 
 _Why is the available number of IPs showing as 251, where are the rest 5 IPs used?_  
+
+10.0.0.0: Network ID.
+10.0.0.1: Reserved by AWS for the VPC router.
+10.0.0.2: Reserved by AWS for the DNS server.
+10.0.0.3: Reserved by AWS for the DHCP Server.
+10.0.0.255: Network Broadcast ID.
+
 _Why have we created two private and public in different subnets? Should we not create both Public subnets in one AZ and both Private in another AZ?_
 
 #### Activity 03 - Create Internet gateway
 
 As you might have noticed, there were similar steps taken in creating the Public and Private subnets, what differentiates them?
-A public subnet is the one that has a route to Internet Gateway in its routing table. So now let's create an Internet Gateway.
+A public subnet is the one that has a route to Internet Gateway in its routing table.
+
+So now let's create an Internet Gateway.
 Click on Internet Gateways in the sidebar of VPC Dashboard and then click on Create Internet Gateway.
 
 -   Name tag: MyIGW
--   Click on Yes, Create.
+-   Click on Create and Close.
 
 You will see the state of MyIGW as detached as it is not yet attached to a VPC.  
-Select the MyIGW and click on Attach to VPC, select MyVPC from the drop-down in next pop up and click
-on Yes, Attach.
 
-_Why was the default VPC not showing in the dropdown._
+Select MyIGW and click on Actions, Select Attach to VPC, Select MyVPC from the drop-down in next pop up and click
+on Attach.
+
+_Why was the default VPC not showing in the dropdown?_
 
 #### Activity 04 - Create Route table (public) and assign to relevant Subnets
 
@@ -77,34 +93,35 @@ Click on Route tables in the side bar, you should see a Route Table already crea
 -   Click on Create Route Table
         _Name tag_: MyPublicRoute
         _VPC_: MyVPC
--   Click on Yes, Create.
+-   Click on Create and Close.
 
 A new route table would have come up now.
 
-While the MyPublicRoute selected, click on Routes tab in the lower half of the screen. You would see that it already has an entry for local traffic. We now should add the route entry meant for Internet.
-Click on Edit and then on Add route. Fill in the below details in the new blank route table entry.
+While the MyPublicRoute selected, click on Routes tab in the lower half of the screen. You would see that it already has an entry for local traffic. We should now add the route entry meant for Internet.
+Click on Edit routes and then on Add route. Fill in the below details in the new blank route table entry.
 
 -   Destination: 0.0.0.0/0
 -   Target: Internet Gateway (you would see the Internet gateway name in the drop down)
 
-Click on Save routes.
+Click on Save routes and Close.
 
-This way we have added an entry to Internet in our public route table, now is the time to assign the route table to our public subnets.
+This way we have added an entry to Internet in our public route table, We will now assign the route table to our public subnets.
 
 -   Click on the Subnet Associations tab right next to the Routes tab.
 
 _You would see that all four subnets that you created are associated with the main route table, why?_
 
--   Click on Edit subnet associations and select the two Public Subnets that you created. Save.
+-   Click on Edit subnet associations and select the two Public Subnets that you created and Click on Save.
 
-Let us now create three different 'Security Groups' for bastion hosts, application server, database and load balancer. We would leverage them in coming labs.
+Let us now create three different 'Security Groups' for bastion hosts, Application Server, Database and Load Balancer. We would leverage them in coming labs!.
+
 In the navigation pane find and click on 'Security Groups'
 
 -   Click on 'Create Security Group'   
     		_Security group name_: My-App-SG   
     		_Description_: This SG is to be used for application servers.   
     		_VPC_: MyVPC
--   Click on Create
+-   Click on Create and Close.
 
 Create three more security groups with following configurations --
 
@@ -118,8 +135,9 @@ Create three more security groups with following configurations --
     		_Description_: This SG is to be used for bastions hosts.   
     		_VPC_: MyVPC
 
-Select either of the Security Group now and click on 'Inbound Rules' tab.
-Click on 'Edit Rules' and add rules for incoming traffic on the security groups like mentioned below.
+Add the below listed Rules to the respective Security Group that you just created.
+
+Select Security Group and click on 'Inbound Rules' tab in the lower half of the screen. Click on 'Edit Rules' and add rules for the incoming traffic.
 
 #### My-BastionHost-SG
 
@@ -139,7 +157,7 @@ Click on 'Edit Rules' and add rules for incoming traffic on the security groups 
 
 |     Type     | Protocol | Port Range |  Source  |           |
 | :----------: | :------: | :--------: | :------: | :-------: |
-| MYSQL/Aurora |    TCP   |    3306    |  Custom  | My-App-SG |
+| MYSQL/Aurora |    TCP   |    3306    |  Custom  | My-App-SG | Note: just type "sg" to get list of Security Groups and then select. 
 |      RDP     |    TCP   |    3389    | Anywhere | 0.0.0.0/0 |
 
 #### My-ALB-SG
@@ -179,7 +197,9 @@ These rules are not perfect but will suffice our requirement as of now. We will 
 |  HTTP |    TCP   |     80     | Anywhere | 0.0.0.0/0 |
 | HTTPS |    TCP   |     443    | Anywhere | 0.0.0.0/0 |
 
-For now, our VPC configuration is complete. The instances launched in our public subnets should have access to Internet and the instances in our private subnet should not. We would verify the same in the next section.
+Congratulation! For now, our VPC configuration is complete.
+
+Let's go ahead and launch one instance in Public subnet and that should have access to Internet and the Instances that we launch in our Private subnet should not. We will verify the same in the next section.
 
 ## VPC Lab -- Part 02 of 02
 
@@ -226,7 +246,7 @@ On the next page check that your AMI is free tier eligible and Instance Type is 
 
 -   Click on Launch.
 
-On the next window, select to use existing Key Pair 'mykey'.
+On the next window, select to use existing Key Pair 'mykey' and Checkd "I ackknowldge".
 
 -   Click on Launch Instance
 
@@ -237,11 +257,11 @@ _Why are both are running in the same AZ?_
 
 #### Activity 06 - Verifying the connectivity
 
-We now have created two EC2 instances one in each public and private subnet. We would now verify whether our network configuration is working as desired.
+We have now created two EC2 instances one in each public and private subnet. We would now verify whether our network configuration is working as desired.
 
 Let us RDP to the MyAppServer.
 
--   Select the MyAppServer in the dashboard and click on 'Connect'
+-   Select the MyAppServer in the dashboard and click on 'Connect' and Select Get Password.
 -   You now have to mention the path of your 'key pair' and decrypt the windows password.
 -   Get the login credentials and login to the instance.
 
@@ -267,12 +287,13 @@ _Why did you select MyPublicSubnet01 and not MyPublicSubnet02?_
 
 Now as your NAT Gateway has been created, we will add this in the private route table.
 
--   Go to Route Tables, create a new route table "MyPrivateRoute" and assign it to the two Private Subnets (Follow the similar process as you did in activity 3.  
-    As expected, you would see that it has an entry for local traffic. We now should add the route entry meant for Internet.
--   Click on Edit and then on Add Another Route. Fill in the below details in the new blank route table entry.
+-   Go to Route Tables, create a new route table, Name Tag as "MyPrivateRoute", VPC as MyVPC  and Create.
+-   Select the route table that you jsut craeted and selct the below tab Subnet Association, Edit subnet association, Select both the    Private Subnets and Save.
+    As expected, you would see that it has an entry for local traffic in Routes tab. We now should add the route entry meant for Internet.
+-   Click on Edit routes, Add route  and then fill in the below details in the new blank route table entry.
 -   Destination: 0.0.0.0/0
 -   Target: NAT Gateway (Select the one you created)
--   Click on save.
+-   Click on Save routes and Close.
 
 So, you have now created a NAT Gateway which is a managed service by Amazon and assigned it to the route table which is assigned to your private subnets. This way the EC2 instances created in private subnets would get the outbound access to Internet for downloading updates/patches etc.
 Let us verify the same by going back and accessing Internet from the instance in private subnet. It should work now if you have followed the steps carefully.
